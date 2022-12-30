@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let antwoord = prompt("Hoeveel automerken wil je ingeven?", "3")
+		let automerken = ["volvo", "audi", "renault"]
+		let lengte = automerken.length;
+		let merk1 = prompt("Geef merk nr 1 in.", "volvo")
+		let merk2 = prompt("Geef merk nr 2 in.", "audi")
+		let merk3 = prompt("Geef merk nr 3 in.", "renault")
+		document.write(`<p>U gaf volgende merken in:</p>`);
+		for (let i = 0; i < lengte; i++) {
+			document.write(`<p>${i + 1}: ${automerken [i]}</p>`);
+		}
+	</script>
+</body>
+</html>
